@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  tcp-socket:
+    image: frnimh/docker-tcp
+    container_name: docker-tcp-socket
+    ports:
+      - "1264:2375"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
